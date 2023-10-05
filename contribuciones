@@ -1,0 +1,36 @@
+hice una primera subida de archivos con lo que tenía hasta ahora, pero es una prueba y si quieren lo pueden borrar, no hay problema, 
+solo estaba averigando como subir archivos a github cuando el repositorio no lo habia creado yo.
+
+28-08-2023-matias
+agregué el link css a las páginas en el head
+hice un favicon con el isotipo de apetit y lo agregué al head
+
+29-08-2023-matias(atrasado)
+estuve subiendo las páginas de los desyunos!
+
+30_08_2023-matias
+cambié algunos textos alternativos de las imágenes que me quedaron mal al crear las páginas de los postres, y otros que estaban en el index
+tambien cambié el trucho logo A que había hecho en las páginas y le puse el logo appetit que habia hecho virginia
+
+5-09-2023-matias
+Eliminé archivos viejos que estaban en la pagina, (pasta avocado, spicy veggie soup y las dos imágenes que estaban relacionadas). 
+Tambien borré los archivos "matias prueba" y "matias segunda prueba" que estaban al pedo.
+
+Pude alinear el logo y el slogan con el nav, metiendo el nav en el header y acomodándolo por CSS.
+lo pasé a todas las páginas.
+
+23-09-2023-matias
+pude agregar enlaces "More recipes" a la páginas de recetas, a las de lunch, breakfast, dessert, index, y lei en que poniendo solo el ancho de las imágenes el navegador acomoda el alto.
+por lo que es más facil para manejar los altos para cuando hagamos los tres tamaños distintos de la página por media queries.
+
+29-09-2023 matias
+Estuve acomodando las páginas de contacto, about us, y chefs, con lo mínimo de CSS para dejarlas centradas. 
+Al formulario de contacto le puse el fondo de color y bordes redondeados.
+Estuve separando parte del código CSS en otros archivos CSS. 
+También le encontré la vuelta para poner los enlaces de la nav bar y del footer con una transición (con los otros enlaces no pude ya que se rompían mucho)
+Apliqué una fuente con google fonts, la raleway como primer opción, la montserrat como segunda opcion por si no llega a funcionar la raleway.
+Le puse sombra a las imágenes, y les redondeé el borde.
+Le di un poco de color al header y al footer.
+Todos los colores son de la paleta de colores que habiamos dicho.
+
+Espero les guste sinó lo vamos cambiando!
