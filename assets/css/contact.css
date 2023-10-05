@@ -1,0 +1,23 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.form-div {
+    background-color: rgb(184, 233, 149);
+    padding: 1.5rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(32,32,32,0.3);
+}
+
+/*estilo de los parrafos de contacto*/
+.texto_contact_us {
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_about_us {
+    line-height: 2;
+    width: 37.5rem;
+    padding: 1.25rem;
+}
