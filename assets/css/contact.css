@@ -10,6 +10,15 @@
     box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(32,32,32,0.3);
 }
 
+name, surname, email {
+    height: 21px;
+    width: 18px;
+}
+textarea {
+    height: 42px;
+    width: 185px;
+}
+
 /*estilo de los parrafos de contacto*/
 .texto_contact_us {
     display: flex;

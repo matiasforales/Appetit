@@ -43,10 +43,10 @@
           <section class="formulario">
             <div class="form-div">
               <form>               
-                <p class="name"> <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" /> </p> 
-                <p class="surname"> <input name="surname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Surname" id="surname" /> </p>
-                <p class="email"> <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" /> </p>                    
-                <p class="text"> <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="Message" placeholder="Message"></textarea> </p>                  
+                <p class="name"> <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" pattern="[A-Za-z]+" required minlength="3" maxlength="50" /> </p> 
+                <p class="surname"> <input name="surname" type="text" class="feedback-input" placeholder="surname" id="surname" pattern="[A-Za-z]+" required minlength="5" maxlength="50" /> </p>
+                <p class="email"> <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" pattern='^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$' required /> </p>                    
+                <p class="text"> <textarea name="message" class="feedback-input" id="message" placeholder="Message" required minlength="5"/></textarea> </p>                  
                 <div class="submit">
                   <input id="button-send" type="submit" value="Send"/>
                 </div>
@@ -71,5 +71,7 @@
                 <a class="enlace" href="./contact.html"> Contact</a>
             </div>
         </footer>
+
+        <script src="../assets/js/contact.js"></script>
     </body>
 </html>
