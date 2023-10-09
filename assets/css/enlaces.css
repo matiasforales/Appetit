@@ -7,6 +7,7 @@ a :hover {
     color: rgb(245, 206, 122);
 }
 
+/*transicion de los enlaces de nav y footer*/
 .indicadores a{
     color: black;
     position: relative;
@@ -43,3 +44,4 @@ a :hover {
     opacity: 1;
     width: 40%;
 }
+/*hasta aqui la transicion de los enlaces de nav y footer*/

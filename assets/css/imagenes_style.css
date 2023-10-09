@@ -1,0 +1,22 @@
+/*centrado de la imagen de landing page*/
+#imagen_landing_page {
+    display: flex;
+    justify-content: center;
+}
+
+/*estilo de las imágenes*/
+main img {
+    border-radius: 1rem;
+}
+
+/*Animacion en las sombras de las imágenes (traté de ser sutil para no arruinarla, cambia un poco el tono de color de la sombra).*/
+/*Adaptado del ejemplo de w3c shoools https://www.w3schools.com/cssref/tryit.php?filename=trycss_anim_box-shadow*/
+main img{
+    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(247,215,146,0.4);
+    animation: sombreado_imagenes 5s infinite;
+}
+  
+@keyframes sombreado_imagenes {
+    50% {box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(255, 174, 0, 0.6);}
+}
+/*con el 50% la animacion avanza y retrocede, si le pusiera 100% avanzaria hata el final y saltaria al principio sin transicion*/
