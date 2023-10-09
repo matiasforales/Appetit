@@ -2,6 +2,8 @@
 @import url(./contact.css);
 @import url(./enlaces.css);
 @import url(./chefs.css);
+@import url(./imagenes_style.css);
+@import url(./animacion_titulos.css);
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap');
 
 body {
@@ -26,6 +28,10 @@ header {
     padding: 1.25rem 1.25rem 0rem 1.25rem;
 }
 
+.subtitulo {
+    font-weight: bold;
+}
+
 /*centrado horizontal de los links principales*/
 .indicadores {
     display: flex;
@@ -45,18 +51,22 @@ header {
     margin: 0.625rem 2.5rem 0.313rem 2.5rem
 }
 
-/*centrado de la imagen de landing page*/
-#imagen_landing_page {
-    display: flex;
-    justify-content: center;
-}
-
-
-
 /*centrado de titulo h1*/
 h1, h2, h3 {
     display: flex;
     justify-content: center;
+    color: black;
+}
+
+/*Animacion de los títulos (h1)*/
+.titulo_animado{
+    animation-name: color_titulos;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 
 /*centrado de recetas*/
@@ -97,27 +107,14 @@ h1, h2, h3 {
     justify-content: center;
 }
 
-/*estilo de las imágenes*/
-img {
-    border-radius: 1rem;
-    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(247,215,146,0.4);
-}
-
-/*anula la sombra en la imagen del logo*/
-#logo{
-    box-shadow: 0rem 0rem 0rem 0rem rgba(247,215,146,0.4);
-}
-
+/*estilo centrado del cuerpo de las recetas*/
 .cuerpo {
     line-height: 2;
     width: 37.5rem;
     padding: 1.25rem;
 }
 
-.subtitulo {
-    font-weight: bold;
-}
-
+/*estilo del footer*/
 footer {
     background-color: rgb(247,241,217);
 }
