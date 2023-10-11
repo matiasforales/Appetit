@@ -19,6 +19,21 @@ textarea {
     width: 185px;
 }
 
+/* Error Icon */
+p input, p span {
+    vertical-align: middle;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
+  color: red;
+  /* content: "\e000"; */
+}
+
+.error {
+    border: 2px solid red;
+}
+
 /*estilo de los parrafos de contacto*/
 .texto_contact_us {
     display: flex;
