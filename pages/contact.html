@@ -20,7 +20,7 @@
     <body>
         <header>
             <div class="principal">
-                <a href="../index.html"> <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px" width="250"/></a>
+                <a href="../index.html"> <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit"/></a> <!-- Al hacer click en el logo se redirige al home -->
                 <h5 id="slogan">Enjoy the balance with Appetit: Food that takes care of you</h5>
             </div>
             <nav>
@@ -46,10 +46,17 @@
           <section class="formulario">
             <div class="form-div">
               <form>               
+<<<<<<< HEAD
+                <p class="name"> <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" pattern="[A-Za-z]+" required minlength="3" maxlength="50" /> </p> 
+                <p class="surname"> <input name="surname" type="text" class="feedback-input" placeholder="surname" id="surname" pattern="[A-Za-z]+" required minlength="5" maxlength="50" /> </p>
+                <p class="email"> <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" pattern='^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$' required /> </p>                    
+                <p class="text"> <textarea name="message" class="feedback-input" id="message" placeholder="Message" required minlength="5"></textarea> </p>                  
+=======
                 <p class="name"> <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" required /><span id="name-error" class="material-symbols-outlined"></span></p>
                 <p class="surname"> <input name="surname" type="text" class="feedback-input" placeholder="surname" id="surname" required /><span id="surname-error" class="material-symbols-outlined"></span></p>
                 <p class="email"> <input name="email" type="email" class="feedback-input" placeholder="Email" id="email" required /><span id="email-error" class="material-symbols-outlined"></span></p>
                 <p class="text"> <textarea name="message" class="feedback-input" id="message" placeholder="Message" required minlength="5"/></textarea> </p>                  
+>>>>>>> a283b5ff75718d24eed600a5fc9be04c1e27b350
                 <div class="submit">
                   <input id="button-send" type="submit" value="Send"/>
                 </div>
