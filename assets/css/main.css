@@ -81,7 +81,7 @@ h1, h2, h3 {
     justify-content: center;
 }
 
-/*esto tambien funciona en las otras páginas que tienen enlaces hacia las recetas además de funcionar en Breakfast.html*/
+/*esto define la div de los enlaces a las recetas*/
 .enlace_a_receta {
     width: 22rem;
     justify-content: center;
@@ -105,7 +105,7 @@ h1, h2, h3 {
 .receta_primera_parte, .receta_segunda_parte {
     display: flex;
     justify-content: center;
-}
+} 
 
 /*estilo centrado del cuerpo de las recetas*/
 .cuerpo {

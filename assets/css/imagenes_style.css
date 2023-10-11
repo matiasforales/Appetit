@@ -3,15 +3,39 @@
     display: flex;
     justify-content: center;
 }
+#logo {
+    width: 250px;
+    height: 76px;
+}
 
 /*estilo de las imágenes*/
 main img {
     border-radius: 1rem;
 }
 
+/*estilo de la imagen que compone el enlace a las recetas*/
+.imagen_del_enlace {
+    width: 200px;
+}
+
+/*estilo de las fotos de las recetas*/
+.foto_receta > img {
+    width: 595px;
+}
+
+/*estilo de la foto de about_us*/
+#foto_resto {
+    width: 595px;
+}
+
+/*estilo de las fotos de los chefs*/
+.imagen_chefs > img {
+    width: 595px;
+}
+
 /*Animacion en las sombras de las imágenes (traté de ser sutil para no arruinarla, cambia un poco el tono de color de la sombra).*/
 /*Adaptado del ejemplo de w3c shoools https://www.w3schools.com/cssref/tryit.php?filename=trycss_anim_box-shadow*/
-main img{
+main img {
     box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(247,215,146,0.4);
     animation: sombreado_imagenes 5s infinite;
 }
