@@ -5,7 +5,8 @@ let element = document.querySelectorAll('input');
 
 element.forEach(i => {
     i.addEventListener('blur', (e) => {
-        let spanId = document.getElementById(e.target.name + '-error');
+        let spanId = document.getElementById(e.target.name + '-error-icon');
+        let pError = document.getElementById(e.target.name + '-error');
         let message = '';
         let error = false;
         if (e.target.name == 'name'){
@@ -49,15 +50,14 @@ element.forEach(i => {
         }
         if (error){
             spanId.innerHTML = '&#xe000';
+            pError.innerHTML = (message);
+            pError.style.display = "block";
             e.target.classList.add('error');
-            // e.target.setCustomValidity(message);
-            // i.reportValidity();
         }
         else {
             spanId.innerHTML = '';
+            pError.style.display = "none";
             e.target.classList.remove('error');
-            // e.target.setCustomValidity(message);
-            // i.reportValidity();
         }
     })
 })

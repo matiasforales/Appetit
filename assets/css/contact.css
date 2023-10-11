@@ -10,10 +10,21 @@
     box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(32,32,32,0.3);
 }
 
-name, surname, email {
+.name, .surname, .email {
     height: 21px;
-    width: 18px;
+    width: 209px;
 }
+
+#name-error, #surname-error, #email-error {
+    height: 21px;
+    width: 185px;
+    border: 2px solid red;
+    background-color: lightpink;
+    color: red;
+    display: none;
+    font-size: 10px;
+}
+
 textarea {
     height: 42px;
     width: 185px;
@@ -29,6 +40,7 @@ p input, p span {
   color: red;
   /* content: "\e000"; */
 }
+
 
 .error {
     border: 2px solid red;
