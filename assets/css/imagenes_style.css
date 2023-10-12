@@ -19,7 +19,7 @@ main img {
 }
 
 /*estilo de las fotos de las recetas*/
-.foto_receta > img {
+.imagen_de_receta {
     width: 595px;
 }
 
@@ -29,7 +29,7 @@ main img {
 }
 
 /*estilo de las fotos de los chefs*/
-.imagen_chefs > img {
+.foto_chef {
     width: 595px;
 }
 
