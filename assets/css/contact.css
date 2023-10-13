@@ -12,38 +12,12 @@
 
 .name, .surname, .email {
     height: 21px;
-    width: 209px;
-}
-
-#name-error, #surname-error, #email-error {
-    height: 21px;
     width: 185px;
-    border: 2px solid red;
-    background-color: lightpink;
-    color: red;
-    display: none;
-    font-size: 10px;
 }
 
 textarea {
     height: 42px;
     width: 185px;
-}
-
-/* Error Icon */
-p input, p span {
-    vertical-align: middle;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
-  color: red;
-  /* content: "\e000"; */
-}
-
-
-.error {
-    border: 2px solid red;
 }
 
 /*estilo de los parrafos de contacto*/
