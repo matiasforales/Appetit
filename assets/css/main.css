@@ -5,50 +5,30 @@
 @import url(./imagenes_style.css);
 @import url(./animacion_titulos.css);
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+}
 
-body {
+body main {
     font-family: 'Raleway', 'Montserrat', sans-serif;
+    background-color: #ffffff;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: end;
-    background-color: rgb(247,241,217);
-}
-
-/*para el alineado vertical de los elementos (logo y slogan)*/
-.principal {
-    display: flex;
-    align-items: flex-end;
-}
-
-#slogan {
-    color: black;
-    padding: 1.25rem 1.25rem 0rem 1.25rem;
 }
 
 .subtitulo {
     font-weight: bold;
 }
 
-/*centrado horizontal de los links principales*/
-.indicadores {
-    display: flex;
-    justify-content: center;
-    font-size: 1.25rem;
-    padding: 1.25rem 1.25rem 1rem 1.25rem;      
-}
-
 /*centrado de enlaces a secciones*/
 .enlaces_a_secciones {
     display: flex;
     justify-content: center;
-}
-
-/*margen para los indicadores "recipes, chefs, home, about us, contact*/
-.enlace {
-    margin: 0.625rem 2.5rem 0.313rem 2.5rem
 }
 
 /*centrado de titulo h1*/
@@ -69,14 +49,8 @@ h1, h2, h3 {
     animation-fill-mode: forwards;
 }
 
-/*centrado de recetas*/
-.contenedor_recetas {
-    display: flex;
-    justify-content: center;
-}
-
-/* esta parte de css es para los enlaces a las recetas*/
-.contenedor_de_enlaces_01, .contenedor_de_enlaces_02  {
+/*centrado de recetas y enlaces a las recetas*/
+.contenedor_recetas, .contenedor_de_enlaces_01, .contenedor_de_enlaces_02 {
     display: flex;
     justify-content: center;
 }
@@ -98,14 +72,10 @@ h1, h2, h3 {
 /*hasta aqui creo lo de css es para los enlaces a las recetas */
 
 /*estilo de las recetas*/
-.foto_receta {
+.foto_receta, .receta_primera_parte, .receta_segunda_parte {
     display: flex;
     justify-content: center;
 }
-.receta_primera_parte, .receta_segunda_parte {
-    display: flex;
-    justify-content: center;
-} 
 
 /*estilo centrado del cuerpo de las recetas*/
 .cuerpo {
@@ -115,22 +85,15 @@ h1, h2, h3 {
 }
 
 
-
-
-
 /* Estilo básico de la barra de navegación */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
-*{
+body > header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-}
-
-body{
-    background-color: #ffffff;
 }
 
 .header{
@@ -199,29 +162,19 @@ body{
 }
 
 
-
-
-
 /*estilo de footer*/
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
-* {
+
+body footer {
     padding: 0;
     margin: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-    background-color: #eaf0f2;
 }
 
 header {
     text-align: center;
     padding-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 75px;
     font-size: 35px;
 }
 
@@ -235,7 +188,8 @@ header span {
 
 
 footer {
-    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    position: static;
     bottom: 0;
 }
 
@@ -345,9 +299,6 @@ footer {
     text-decoration: none;
     ;
 }
-
-
-
 
 
 /* Footer  */
