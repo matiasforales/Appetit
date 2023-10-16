@@ -221,7 +221,8 @@ html {
 header {
     text-align: center;
     padding-top: 100px;
-    margin-bottom: 300px;
+    /* reduje el margin-botton de 300px a 100px porque quedaba mucho espacio en blanco entre el header y el form */
+    margin-bottom: 100px; 
     font-size: 35px;
 }
 

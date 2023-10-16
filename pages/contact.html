@@ -33,7 +33,7 @@
            </ul>            
         </nav>
         <a class="btn" href="../pages/contact.html"><button>Contact</button></a>
-    </header>
+      </header>
 
         <main>
           <h1 class="titulo_animado">Contact Us</h1>
@@ -46,15 +46,31 @@
           <br>
           <section class="formulario">
             <div class="form-div">
-              <form autocomplete="off">
-                <p class="name"> <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" pattern="^[A-Za-z]{3,30}$" minlength="3" maxlength="30" required /></p>
-                <p class="surname"> <input name="surname" type="text" class="feedback-input" placeholder="surname" id="surname" pattern="^[A-Za-z]{3,30}$" minlength="3" maxlength="30" required /></p>
-                <p class="email"> <input name="email" type="text" class="feedback-input" placeholder="Email" id="email" pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" required /></p>
-                <p class="text"> <textarea name="message" class="feedback-input" id="message" placeholder="Message" required minlength="5"/></textarea> </p>                  
-                
-                <div class="submit">
-                  <input id="button-send" type="submit" value="Send"/>
+              <form class="form" autocomplete="off">
+                <div class="form-container">
+                  <div class="form-group">
+                    <input name="name" type="text" id="name" class="form-input" placeholder=" " pattern="^[A-Za-z]{3,30}$" minlength="3" maxlength="30" required>
+                    <label for="name" class="form-label">Name:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <div class="form-group">
+                    <input name="surname" type="text" id="surname" class="form-input" placeholder=" " pattern="^[A-Za-z]{3,30}$" minlength="3" maxlength="30" required>
+                    <label for="surname" class="form-label">Surname:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <div class="form-group">
+                    <input name="email" type="email" id="email" class="form-input" placeholder=" " pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" required>
+                    <label for="email" class="form-label">e-mail:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" type="text" id="message" class="form-input" placeholder=" " minlength="10" required></textarea>
+                    <label for="message" class="form-label">Message:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <input class="form-submit" type="submit" value="Send"/>
                 </div>
+                
               </form>
             </div>
           </section>
@@ -67,7 +83,7 @@
           <h3>We look forward to seeing you soon at Appetit, where good health is served in every delicious bite!</h3>
         </main>
 
-        <footer class="footer-distributed">
+      <footer class="footer-distributed">
     
           <div class="footer-left">
               <a href="../index.html">
