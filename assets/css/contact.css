@@ -97,3 +97,13 @@ textarea {
     width: 37.5rem;
     padding: 1.25rem;
 }
+
+.hache_3 {
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_hache_3 {
+    line-height: 2;
+    padding: 1.25rem;
+}
