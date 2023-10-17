@@ -8,3 +8,8 @@
     width: 37.5rem;
     padding: 1.25rem;
 }
+
+.iframe_maps > iframe {
+    width: 600px;
+    height: 450px;
+}
