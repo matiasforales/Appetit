@@ -7,9 +7,10 @@
     background-color: rgb(255, 255, 255);
     padding: 1.5rem 3rem;
     border-radius: 1.5rem;
-    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem rgba(32,32,32,0.3);
+    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem #91919165;
     /* Agregue el max-width de 400px para que no se deforme el form en el cambio de medidas del viewport */
     max-width: 400px;
+    animation: sombreado 5s infinite;
 }
 
 .form-container {

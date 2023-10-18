@@ -1,8 +1,0 @@
-@keyframes color_titulos{
-    From{
-        color: rgb(0, 0, 0);
-    }
-    to{
-        color: rgba(255, 174, 0, 0.6);
-    }
-}

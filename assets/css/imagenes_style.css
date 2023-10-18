@@ -1,8 +1,3 @@
-/*centrado de la imagen de landing page*/
-#imagen_landing_page {
-    display: flex;
-    justify-content: center;
-}
 #logo {
     width: 250px;
     height: 76px;
@@ -16,6 +11,7 @@ main img {
 /*estilo de la imagen que compone el enlace a las recetas*/
 .imagen_del_enlace {
     width: 200px;
+    height: 200px;
 }
 
 /*estilo de las fotos de las recetas*/
@@ -31,4 +27,8 @@ main img {
 /*estilo de las fotos de los chefs*/
 .foto_chef {
     width: 595px;
+}
+.imagen_del_enlace, .imagen_de_receta, .foto_chef, #foto_resto {
+    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem #91919165;
+    animation: sombreado 5s infinite;
 }
