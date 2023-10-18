@@ -124,7 +124,7 @@
   border-radius: 25px;
   color: #ffffff;
   text-transform: capitalize;
-  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2); /* borde sombreado*/
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); /* borde sombreado*/
 }
 
 .btn-1:hover {
@@ -449,6 +449,10 @@ body footer {
     height: 70px;
 }
 
+.icono_footer {
+    width: 38px;
+    height: 38px;
+}
 
 .footer-distributed {
     background-color: #3ea131;
@@ -523,7 +527,7 @@ body footer {
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
+.footer-distributed .footer-center i .fa-envelope {
     font-size: 17px;
     line-height: 38px;
 }
@@ -547,7 +551,6 @@ body footer {
     text-decoration: none;
     ;
 }
-
 
 /* Footer  */
 
