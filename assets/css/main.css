@@ -3,7 +3,7 @@
 @import url(./enlaces.css);
 @import url(./chefs.css);
 @import url(./imagenes_style.css);
-@import url(./animacion_titulos.css);
+@import url(./animaciones.css);
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -92,6 +92,7 @@
 
 .header-info {
 	display: flex;
+    justify-content: center;
 	align-items: center;
 	margin-top: 100px;
 }
@@ -147,13 +148,14 @@
 }
 
 .info-1 {
-  width: 300px;
-  padding: 15px 25px;
-  text-align: center;
-  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); 
-  border-radius: 20px;
+    width: 300px;
+    padding: 15px 25px;
+    text-align: center;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+    margin: 25px 10px;
+    animation: sombra_info-1 5s infinite;
 }
-
 
 .info-1 img {
 	width: 35px;
@@ -177,6 +179,7 @@
 .nosotros-info {
 	padding: 100px 0;
 	display: flex;
+    justify-content: center;
 	align-items: center;
 }
 
@@ -291,7 +294,7 @@
 	border: 1px solid #eee;
 }
 
-
+/*------------------------------------------------------------------------------------------------------------------*/
 
 body{
     margin: 0px;
@@ -302,13 +305,11 @@ body main {
     font-family: 'Raleway', 'Montserrat', sans-serif;
 }
 
-
-
 .subtitulo {
     font-weight: bold;
 }
 
-/*centrado de enlaces a secciones*/
+/*centrado de enlaces a secciones */
 .enlaces_a_secciones {
     display: flex;
     justify-content: center;
@@ -327,7 +328,7 @@ h1, h2, h3 {
     animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-delay: 0.5s;
-    animation-iteration-count: 4;
+    animation-iteration-count: 12;
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }
@@ -368,7 +369,7 @@ h1, h2, h3 {
 }
 
 
-/* Estilo básico de la barra de navegación */
+/* Estilo básico de la barra de navegación HEADER---------------------------------- */
 
 body > header {
     box-sizing: border-box;
@@ -376,9 +377,8 @@ body > header {
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
+    padding-top: 40px;
 }
-
-
 
 .header .logo{
     cursor: pointer;
@@ -437,27 +437,18 @@ body > header {
 }
 
 
-/*estilo de footer*/
+/*estilo de footer ---------------------------*/
 
 body footer {
     padding: 0;
     margin: 0;
+    position: static;
 }
 
 #logo {
     height: 70px;
 }
 
-
-
-@media (max-height:800px) {
-    footer {
-        position: static;
-    }
-    header {
-        padding-top: 40px;
-    }
-}
 
 .footer-distributed {
     background-color: #3ea131;
@@ -601,6 +592,7 @@ body footer {
     color: #3F71EA;
 }
 
+/*media queries------------------------------------------------------------------------------------------*/
 @media (min-width: 600px) and (max-width: 1000px) {
     .header{
         display: flex;
@@ -632,6 +624,7 @@ body footer {
     }    
     .imagen_del_enlace{
         width: 150px;
+        height: 150px;
     }
     .imagen_de_receta {
         width: 500px;
@@ -671,6 +664,42 @@ body footer {
         width: 500px;
         height: 375px;
     }
+
+    .info { /*horario, ubicacion y telefono */
+        padding: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info-1 {
+        margin: 25px;
+    }
+    
+    .header-info { /*imagen primer ensalada con chefs y "Each Dish Tells A Story... "*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .header-img img { /*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
+        width: 500px;
+        z-index: -1;
+    }
+
+    .product-info{
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */   
+    }
+
+    .nosotros-info { /*segunda ensalada del home y "Our dishes are our signature" */
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -704,6 +733,7 @@ body footer {
     }
     .imagen_del_enlace{
         width: 100px;
+        height: 100px;
     }
     .imagen_de_receta {
         width: 350px;
@@ -743,16 +773,41 @@ body footer {
         width: 400px;
         height: 300px;
     }
-} 
 
-@media (max-width: 768px) {
-	.product-info {
-			grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
-	}
-}
+    .info { /*horario, ubicacion y telefono */
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-@media (max-width: 480px) {
-	.product-info {
-			grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas aún más pequeñas */
-	}
+    .info-1 {
+        margin: 25px;
+    }
+
+    .header-info {/*imagen primer ensalada y "Each Dish Tells A Story... "*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header-img img {/*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
+        width: 500px;
+        z-index: -1;
+    }
+    
+    .product-info {
+        grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas aún más pequeñas */
+        justify-content: center;
+    }
+
+    .nosotros-info { /*segunda ensalada del home y "Our dishes are our signature" */
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
