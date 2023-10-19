@@ -6,10 +6,10 @@
 @import url(./animaciones.css);
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 .container {
-	margin: 0 auto;
+	margin: 0;
 }
 
 .header {
@@ -22,10 +22,10 @@
     padding: 5px 5%;
     }
 
-    nav.menu {
-        margin-top:15px;
-        margin-left:300px;
-    }
+nav.menu {
+    margin-top:15px;
+    margin-left:300px;
+}
 .menu {
 	position: absolute;
 	top: 0;
@@ -72,17 +72,9 @@
 
 .bg {
 	position: absolute;
-	width: 1100px;
+	max-width: 1100px;
 	z-index: -1;
 	right: 0;
-}
-
-.bg-2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1100px;
-	z-index: -1;
 }
 
 .esp {
@@ -145,7 +137,7 @@
 .header-img img {
 	width: 650px;
     position: relative; 
-    top: -90px;
+    /*top: -90px;*/
 }
 
 .info {
@@ -185,6 +177,14 @@
     overflow: hidden;
 }
 
+.bg-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 1100px;
+	z-index: -1;
+}
+
 .nosotros-info {
 	padding: 100px 0;
 	display: flex;
@@ -202,24 +202,15 @@
 	width: 650px;
 }
 
-.nosotros -img {
-	width: 50%;
-}
-
-.nosotros-img img {
-	width: 650px;
-}
-
 .nosotros-txt {
 	width: 50%;
     text-align: right;
     position: relative;
-    right: -150px;
 }
 
 .nosotros-txt span {
 	font-size: 16px;
-	color: #ff9f0d;
+	color: #080806;
 	font-weight: 700;
 	margin-bottom: 25px;
 }
@@ -236,7 +227,6 @@
 	color: #545454;
 	margin-bottom: 50px;
 }
-
 
 .products {
 	padding: 80px 50px;
@@ -356,11 +346,10 @@ h1, h2, h3 {
 
 /*esto define la div de los enlaces a las recetas*/
 .enlace_a_receta {
-    width: 22rem;
+    width: 18rem;
     justify-content: center;
     text-align: center;
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
+    margin:1rem 1rem;
 }
 
 #go-to {
@@ -692,48 +681,6 @@ body footer {
         height: 60px;
         width: auto;
     }    
-    .imagen_del_enlace{
-        width: 150px;
-        height: 150px;
-    }
-    .imagen_de_receta {
-        width: 500px;
-    }
-    #foto_resto {
-        width: 500px;
-    }
-    .foto_chef {
-        width: 500px;
-    }
-    .cuerpo_about_us {
-        line-height: 2;
-        width: 31.5rem;
-        padding: 1rem;
-    }
-    .cuerpo_chefs {
-        line-height: 2;
-        width: 31.5rem;
-        padding: 1rem;
-    }
-    .cuerpo_contact_us {
-        line-height: 2;
-        width: 31.5rem;
-        padding: 1rem;
-    }
-    .cuerpo { /*de las recetas*/
-        line-height: 2;
-        width: 31.5rem;
-        padding: 1rem;
-    }
-    .cuerpo_hache_3{ /*en la página contact.html*/
-        line-height: 2;
-        width: 31.5rem;
-        padding: 1rem;
-    }
-    .iframe_maps > iframe { /*iframe de google maps*/
-        width: 500px;
-        height: 375px;
-    }
 
     .info { /*horario, ubicacion y telefono */
         padding: 100px;
@@ -777,8 +724,8 @@ body footer {
     }
 }
 
-/*tablet y celular*/ 
-@media (max-width: 1000px) {
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1000px) {
     nav.menu {
         display: none;
     }
@@ -810,8 +757,6 @@ body footer {
     .footer-distributed .footer-center {
         text-align: left !important;
         margin-left: 70%;
-
-
     }
     .footer-distributed .footer-center i {
         margin-left: 0;
@@ -824,42 +769,48 @@ body footer {
         height: 50px;
         width: auto;
     }
+    .enlace_a_receta {
+        width: 15rem;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
     .imagen_del_enlace{
         width: 100px;
         height: 100px;
     }
     .imagen_de_receta {
-        width: 350px;
+        width: 450px;
     }
     #foto_resto {
-        width: 350px;
+        width: 450px;
     }
     .foto_chef {
-        width: 350px;
+        width: 450px;
     }   
     .cuerpo_about_us {
         line-height: 2;
-        width: 26rem;
+        width: 28.125rem;
         padding: 0.75rem;
     }
     .cuerpo_chefs {
         line-height: 2;
-        width: 26rem;
+        width: 28.125rem;
         padding: 0.75rem;
     }
     .cuerpo_contact_us {
         line-height: 2;
-        width: 26rem;
+        width: 28.125rem;
         padding: 0.75rem;
     }
     .cuerpo { /*de las recetas*/
         line-height: 2;
-        width: 26rem;
+        width: 28.125rem;
         padding: 0.75rem;
     }
     .cuerpo_hache_3{ /*en la página contact.html*/
         line-height: 2;
-        width: 26rem;
+        width: 28.125rem;
         padding: 0.75rem;
     }
     .iframe_maps > iframe { /*iframe de google maps*/
@@ -904,6 +855,153 @@ body footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+    }
+
+    .nosotros-txt {
+        width: 70%;
+        text-align: right;
+        position: relative;
+    }
+}
+
+/*celular*/
+@media (max-width: 600px) {
+    nav.menu {
+        display: none;
+    }
+    .footer-distributed {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        justify-items: center;
+        overflow: hidden;
+    }
+    .btn_menu {
+        display: flex;
+    }
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .header .logo img{ /*del header*/
+        height: 50px;
+        width: auto;
+        transition: all 0.3s;
+    }
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer-distributed .footer-center {
+        text-align: left;
+        margin-left: 50%;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+    }
+    #logo { /*del footer*/
+        height: 50px;
+        width: auto;
+    }
+    .enlace_a_receta {
+        width: 12rem;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+    .imagen_del_enlace{
+        width: 75px;
+        height:  75px;
+    }
+    .imagen_de_receta {
+        width: 350px;
+    }
+    #foto_resto {
+        width: 350px;
+    }
+    .foto_chef {
+        width: 350px;
+    }   
+    .cuerpo_about_us {
+        line-height: 2;
+        width: 25rem;
+        padding: 0.75rem;
+    }
+    .cuerpo_chefs {
+        line-height: 2;
+        width: 25rem;
+        padding: 0.75rem;
+    }
+    .cuerpo_contact_us {
+        line-height: 2;
+        width: 25rem;
+        padding: 0.75rem;
+    }
+    .cuerpo { /*de las recetas*/
+        line-height: 2;
+        width: 25rem;
+        padding: 0.75rem;
+    }
+    .cuerpo_hache_3{ /*en la página contact.html*/
+        line-height: 2;
+        width: 25rem;
+        padding: 0.75rem;
+    }
+    .iframe_maps > iframe { /*iframe de google maps*/
+        width: 400px;
+        height: 300px;
+    }
+
+    .info { /*horario, ubicacion y telefono */
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .info-1 {
+        margin: 25px;
+    }
+
+    .header-info {/*imagen primer ensalada y "Each Dish Tells A Story... "*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .header-txt {
+        top: 100px;
+        width: 80%;
+    }
+    .header-img img {/*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
+        display: none;
+    }
+    
+    .product-info {
+        grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas aún más pequeñas */
+        justify-content: center;
+    }
+
+    .nosotros-info { /*segunda ensalada del home y "Our dishes are our signature" */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros-txt {
+        width: 80%;
+        text-align: right;
+        position: relative;
     }
 }
