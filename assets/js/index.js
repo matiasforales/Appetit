@@ -7,4 +7,4 @@ document.getElementById("btn_menu").addEventListener("click", function(){
 		lista.classList.add('oculto');
 		lista.classList.remove('visible');
 	}
-});
+})

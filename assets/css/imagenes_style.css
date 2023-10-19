@@ -10,8 +10,8 @@ main img {
 
 /*estilo de la imagen que compone el enlace a las recetas*/
 .imagen_del_enlace {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 /*estilo de las fotos de las recetas*/
