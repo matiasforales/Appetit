@@ -61,3 +61,9 @@ cambio de apariencia de footer y nav
 
 15-10-2023 Raúl:
 cambio de apariencia del formulario en la página de contacto.
+
+18-10-2023 Virginia:
+Cambios a la home.
+
+19-10-2023 Matias:
+arreglos a la home y agregado de la documentacion en pdf.
