@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Appetit - Healty recipes</title>
-    
+        
         <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
         <link rel="icon" type="image/x-icon" href="./media/icons/appetit.ico">
     
@@ -13,31 +13,41 @@
         <meta property="og:url" content="https://www.Appetit.com/" />
         <meta property="og:image" content="../assets/media/image/a_logo_Appetit.png" />
         <meta property="og:description" content="Appetit - Healthy recipes" />
-        
         <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
         <header class="header">
             <img class="bg" src="./media/image/home/circulo2.jpg" alt="Fondo del encabezado">
-    
             <div class="logo">
-                <a href="./index.html"> <img src="./media/image/a_logo_Appetit.png" alt="Logo Appetit"> </a>
+               <a href="./index.html"> <img src="./media/image/a_logo_Appetit.png" alt="Logo Appetit"> </a>
             </div>
-            <nav>
+            <nav class="menu">
                 <ul class="nav-links">
                     <li><a href="./pages/recipes.html">Recipes</a></li>
                     <li><a href="./pages/chefs.html">Chefs</a></li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./pages/about_us.html">About us</a></li>
+                    <li><a class="btn" href="./pages/contact.html"><button>Contact</button></a></li>
                 </ul>
             </nav>
-            <a class="btn" href="./pages/contact.html"><button>Contact</button></a>
+            <a class="btn btn_menu" id="btn_menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="lista_menu oculto" id="lista_menu">
+                <ul>
+                    <li><a href="./pages/recipes.html">Recipes</a></li>
+                    <li><a href="./pages/chefs.html">Chefs</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/about_us.html">About us</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </header>
         <br>
     
         <main>
-            <div class="header-content container">
+            <div class="container">
                 <div class="header-info">
                     <div class="header-txt">
                         <h1>Each dish tells a story</h1>
@@ -222,6 +232,7 @@
                     </div>
                 </div>
     
+            </main>
             <section class="nosotros">
                 <img class="bg-2" src="./media/image/home/circulo1.jpg" alt>
                 <div class="nosotros-info container">
@@ -230,7 +241,6 @@
                     </div>
     
                     <div class="nosotros-txt">
-                        <span>Culinary excellence is our commitment</span>
                         <h2>Our dishes are our signature</h2>
                         <p>
                             If you want to learn directly from us, we also offer master classes 
@@ -245,7 +255,6 @@
                 </div>
             </section>
             <br>
-        </main>
         <footer class="footer-distributed">
             <div class="footer-left">
                 <a href="../index.html"> <img id="logo" src="./media/image/a_logo_Appetit.png" alt="Logo Appetit" /></a>
@@ -263,7 +272,6 @@
     
                 <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
             </div>
-    
             <div class="footer-center">
                 <div>
                     <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
@@ -298,3 +306,4 @@
         </footer>    
     </body>
 </html>
+<script src="../assets/js/index.js"></script>

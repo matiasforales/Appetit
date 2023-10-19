@@ -22,14 +22,29 @@
             <a href="../index.html"><img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit"/></a> <!-- Al hacer click en el logo se redirige al home -->
             <h5 id="slogan">Enjoy the balance with Appetit: Food that takes care of you</h5>
         </div>
-        <nav>
-            <div class="indicadores">
-                <a class="enlace" href="./recipes.html"> Recipes</a>
-                <a class="enlace" href="./chefs.html"> Chefs</a>
-                <a class="enlace" href="../index.html"> Home</a>
-                <a class="enlace" href="./about_us.html"> About us</a>
-                <a class="enlace" href="./contact.html"> Contact</a>
-            </div>
+        <nav class="menu">
+            <ul class="nav-links">
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./chefs.html">Chefs</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about_us.html">About us</a></li>
+                <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
+            </ul>
+        </nav>
+        <a class="btn btn_menu" id="btn_menu">
+            <button>
+                <img class="icono" src="../media/icons/menu.png">
+            </button>
+        </a>
+        <div class="lista_menu oculto" id="lista_menu">
+            <ul>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./chefs.html">Chefs</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about_us.html">About us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
         </nav>
     </header>
     <main>
@@ -164,3 +179,4 @@
     </footer>
 </body>
 </html>
+<script src="../assets/js/index.js"></script>
