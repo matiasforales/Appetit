@@ -25,7 +25,6 @@ element.forEach(i => {
                 e.target.setCustomValidity('Por favor ingrese un e-mail válido');
             }
         }
-        i.reportValidity()
     })
     i.addEventListener('change', (e) => {
         e.target.setCustomValidity('');
