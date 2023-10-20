@@ -67,3 +67,10 @@ Cambios a la home.
 
 19-10-2023 Matias:
 arreglos a la home y agregado de la documentacion en pdf.
+
+20/10/2023 matias: (Post entrega) Añado el esquema de la página que habíamos hecho para el sitio.
+
+https://miro.com/app/board/uXjVMiYMCjo=/?share_link_id=683564915557
+
+enlace a Google Drive del grupo:
+https://drive.google.com/drive/folders/1uPLZEgjFrFJwm6pnk88QLNLvflqWAiDs
